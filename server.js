@@ -77,7 +77,7 @@ app.get("/api/scdlv2", async (req, res) => {
     console.error("Search error:", err.message);
     return res.status(500).json({
       status: false,
-      message: "Failed to search SoundCloud: " + err.message,
+      message: "Failed to search : " + err.message,
     });
   }
 });
@@ -113,7 +113,7 @@ app.get("/api/stream", async (req, res) => {
 app.get("/", (_req, res) => {
   res.json({
     status: true,
-    message: "SoundCloud download API is running.",
+    message: "HELIX API is running.",
     credit: {
       name: "HELIX TANVIR",
       contact: "https://www.facebook.com/mdtanvir.albert/",
